@@ -410,7 +410,7 @@ const CanvasArea = ({
                 <>
                   <canvas
                     ref={sigCanvasRef}
-                    className="border rounded w-full h-[110px]"
+                    className="border rounded w-full h-27.5"
                   />
                   <div className="flex gap-2 mt-2">
                     <button

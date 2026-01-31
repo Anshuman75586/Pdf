@@ -37,7 +37,7 @@ const Toolbar = ({
             <button
               key={id}
               onClick={() => setActiveTool(id)}
-              className={`flex flex-col items-center justify-center min-w-[56px] h-[52px] rounded-lg text-[11px] transition
+              className={`flex flex-col items-center justify-center min-w-14 h-13 rounded-lg text-[11px] transition
                 ${
                   isActive
                     ? "bg-blue-600 text-white shadow-sm"
@@ -56,14 +56,14 @@ const Toolbar = ({
         {/* Stamp */}
         <button
           onClick={onShowStampModal}
-          className="flex flex-col items-center justify-center min-w-[56px] h-[52px] rounded-lg text-[11px] text-gray-700 hover:bg-gray-100 transition"
+          className="flex flex-col items-center justify-center min-w-14 h-13 rounded-lg text-[11px] text-gray-700 hover:bg-gray-100 transition"
         >
           <FaStamp className="text-base mb-0.5" />
           <span>Stamp</span>
         </button>
 
         {/* Color picker */}
-        <div className="flex flex-col items-center justify-center min-w-[56px] h-[52px] rounded-lg hover:bg-gray-100 transition">
+        <div className="flex flex-col items-center justify-center min-w-14 h-13 rounded-lg hover:bg-gray-100 transition">
           <input
             type="color"
             value={color}
@@ -74,7 +74,7 @@ const Toolbar = ({
         </div>
 
         {/* Font selector */}
-        <div className="flex flex-col justify-center min-w-[92px] h-[52px] px-1 rounded-lg hover:bg-gray-100 transition">
+        <div className="flex flex-col justify-center min-w-23 h-13 px-1 rounded-lg hover:bg-gray-100 transition">
           <select
             value={font}
             onChange={(e) => setFont(e.target.value)}
@@ -97,7 +97,7 @@ const Toolbar = ({
         {/* Save */}
         <button
           onClick={onSavePdf}
-          className="flex items-center justify-center gap-1 min-w-[72px] h-[40px] px-2 bg-green-600 text-white rounded-lg text-[11px] hover:bg-green-700 transition"
+          className="flex items-center justify-center gap-1 min-w-18 h-10 px-2 bg-green-600 text-white rounded-lg text-[11px] hover:bg-green-700 transition"
         >
           <FaSave className="text-xs" />
           <span>Save</span>
@@ -106,7 +106,7 @@ const Toolbar = ({
         {/* Change PDF */}
         <button
           onClick={onChangePdf}
-          className="flex items-center justify-center gap-1 min-w-[96px] h-[40px] px-2 bg-orange-500 text-white rounded-lg text-[11px] hover:bg-orange-600 transition"
+          className="flex items-center justify-center gap-1 min-w-24 h-10 px-2 bg-orange-500 text-white rounded-lg text-[11px] hover:bg-orange-600 transition"
         >
           <FaFilePdf className="text-xs" />
           <span>Change</span>
